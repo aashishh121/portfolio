@@ -31,21 +31,19 @@ const skillIcons: ISkillIcon[] = [
   { title: "Next Js", imageUrl: NextjsIcon },
 ];
 
-function Home() {
+function Home({ url }: any) {
   const sectionRefs = useRef<{ [key: string]: HTMLDivElement | null }>({
     about: null,
     works: null,
     projects: null,
   });
 
-  const { pathname } = window.location;
-
   useEffect(() => {
-    const route = pathname.split("/")[1];
-    if (route && sectionRefs.current[route]) {
-      sectionRefs.current[route]?.scrollIntoView({ behavior: "smooth" });
+    // const route = pathname.split("/")[1];
+    if (url && sectionRefs.current[url]) {
+      sectionRefs.current[url]?.scrollIntoView({ behavior: "smooth" });
     }
-  }, [pathname]);
+  }, [url]);
 
   const downloadCv = () => {
     const url =

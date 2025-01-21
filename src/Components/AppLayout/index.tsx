@@ -1,21 +1,35 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Header from "../Header";
 import Home from "../Home";
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer";
 
 function AppLayout() {
+  const homeRef = useRef<HTMLDivElement | null>(null);
+  const [url, setUrl] = useState("");
+
+  const handleUrl = (getUrl: string) => {
+    setUrl(getUrl);
+  };
+
+  const gotoHome = () => {
+    if (homeRef) {
+      homeRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
-      <div className="px-8">
-        <Header />
+      <div ref={homeRef} className="px-8">
+        <Header handleUrl={handleUrl} />
         <div>
           <main className="">
-            <Outlet />
+            {/* <Outlet /> */}
+            <Home url={url} />
           </main>
           <a
-            href="home"
+            href="#home"
             className="fixed bottom-8 right-8 w-12 h-12 bg-slate-300 rounded-lg p-3"
+            onClick={() => gotoHome()}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

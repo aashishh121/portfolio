@@ -19,7 +19,7 @@ const navLink = [
   },
 ];
 
-function Header() {
+function Header({ handleUrl }: any) {
   return (
     <>
       <div className="flex justify-between py-2 bg-white">
@@ -30,7 +30,9 @@ function Header() {
           {navLink.map((data) => (
             <>
               <nav className="cursor-pointe z-50">
-                <a href={data.path}>{data.title}</a>
+                <a href={"#" + data.path} onClick={() => handleUrl(data.path)}>
+                  {data.title}
+                </a>
               </nav>
             </>
           ))}
