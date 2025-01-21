@@ -5,14 +5,6 @@ import TextEditorIcon from "../../Assets/texteditor.png";
 
 const projectList = [
   {
-    title: "Playo App",
-    imageUrl: PlayAppIcon,
-    gitUrl: "https://github.com/aashishh121",
-    badge: ["Node Js", "React Js", "TypeScript", "MongoDb", "Tailwind CSS"],
-    description:
-      "Developed Playo App, an event management web application enabling admins to create, update, and delete events. Implemented user features to view all events, manage personal events, and track pending events.",
-  },
-  {
     title: "Real-Time Document Collaboration Tool",
     imageUrl: TextEditorIcon,
     gitUrl: "https://github.com/aashishh121/collaborative-text-editor",
@@ -20,6 +12,15 @@ const projectList = [
     description:
       "Crafted a real-time collaborative text-editor to gain proficiency with Socket.io and WebSockettechnology. Implemented real-time functionality with Socket.io for seamless collaboration between users. Leveraged a Quill library for the rich text editor.",
   },
+  {
+    title: "Playo App",
+    imageUrl: PlayAppIcon,
+    gitUrl: "https://github.com/aashishh121",
+    badge: ["Node Js", "React Js", "TypeScript", "MongoDb", "Tailwind CSS"],
+    description:
+      "Developed Playo App, an event management web application enabling admins to create, update, and delete events. Implemented user features to view all events, manage personal events, and track pending events.",
+  },
+
   {
     title: "Music Player",
     imageUrl: MusicPlayerIcon,

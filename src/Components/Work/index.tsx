@@ -10,7 +10,7 @@ import Illustration from "../../Assets/programmer2.svg";
 
 const projectList = [
   {
-    title: "Engame -Subscription-Based Survey Tool",
+    title: "E-commerce - Subscription-Based Web App",
     imageUrl: NextJsIcon,
     description:
       "Built a web application using Next.js to offer clients to embed pre-developed survey widgets into their custom surveys. Integrated subscription management systems and features for clients to preview or trial the survey tool before purchasing. Ensured data security by implementing hashing algorithms.",
@@ -27,7 +27,7 @@ const projectList = [
     url: "",
   },
   {
-    title: "Research Gearbox - Video Analyzer Dashboard",
+    title: "Video Analyzer Dashboard",
     imageUrl: ReactJsIcon,
     description:
       "Designed and developed survey data analysis web app using React.js and Nest.js, enabling clients to evaluate user feedback or rating on video content. Created a secure authentication services using JWT access/refresh tokens and also integerated role-based access control, ensuring users can only access data based on their roles. Developed advanced data retrieval features using MongoDB aggregation for detailed analysis.",
@@ -43,10 +43,10 @@ const projectList = [
       "Docker",
       "Docker Compose",
     ],
-    url: "https://researchgearbox.com/",
+    url: "",
   },
   {
-    title: "Data Pilot - Survey Automation",
+    title: "Survey Automation",
     imageUrl: NestJsIcon,
     description:
       "Worked on a project Data Pilot, a scalable backend for survey automation using Nest js, leveraging the Playwright library for automation. Designed to support various survey formats, enabling seamless automation across multiple platforms.",
@@ -59,11 +59,11 @@ const projectList = [
       "Tailwind CSS",
       "Docker",
     ],
-    url: "https://e2eresearch.com/products/datapilot",
+    url: "",
   },
 
   {
-    title: "Speak Survey Plugin - Voice-enabled Survey Solution",
+    title: "Speak Plugin - Voice-enabled Survey Solution",
     imageUrl: SpeakerIcon,
     description:
       "Developed Speak Survey Plugin, a voice-enabled survey solution using vanilla JavaScript, allowing users to complete surveys via speech. It seamlessly integrates with survey platforms to read questions aloud and capture responses through speech interpretation. Made the plugin compatible with survey platforms like Confirmit, Questback, Decipher, and Forsta.",
